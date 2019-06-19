@@ -11,9 +11,11 @@ sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
+	maven {url 'https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-config-server'}
 }
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.cloud:spring-cloud-config-server:2.1.2.RELEASE'
 }
